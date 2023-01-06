@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main1{
+    justify-content: center;
+    margin:10px 9%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin:10px 9%;
+}
+.fps{
+    margin: 2px 14px;
+    font-size: 27px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    padding: 5px 13px;
+    cursor: pointer;
+    background-color: rgb(53, 113, 241);
+    color: white;
+    border: 0px;
+    border-radius: 6px;
+}
+button:hover{
+    background-color: rgb(79, 158, 255);
+    transition: 0.5s;
+    color: rgb(242, 245, 62);
+}
+.paragraph{
+    font-size: 20px;
+    font-family:cursive;
+    display: block;
+    margin: 55px 20px;
+}

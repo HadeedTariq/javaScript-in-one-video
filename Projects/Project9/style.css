@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,900&family=Nerko+One&family=Oxygen&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(96, 52, 238);
+    font-family: 'Lato', sans-serif;
+}
+
+.box {
+    display: flex;
+    padding: 0px 53px;
+    align-items: center;
+    background-color: rgb(79, 5, 253);
+    width: 60%;
+    height: 42vh;
+    border-radius: 12px;
+}
+.fh{
+    margin-top: 9%;
+    margin-left: 1%;
+}
+.fs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34vh;
+}
+.fst{
+    display: flex;
+    justify-content: center;
+}
+#inp{
+    padding: 9px 30px;
+    width: 100%;
+    font-size: 19px;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #7d51e5;
+}
+#inp::placeholder{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+h2{
+    padding: 5px 0px;
+}
+#p{
+    padding: 5px 0px;
+}
+#img{
+    height: 45%;
+    width: 28%;
+    border-radius: 70%;
+    margin: 0px 10px;
+    border: 5px solid #202079;
+    box-shadow: 0px 0px 12px #1e84b8;
+}
+.user-info{
+    color: white;
+    font-size: 18px;
+}
+.info{
+    display: flex;
+    list-style: none;
+    padding: 6px 0px;
+}
+.pop{
+    padding: 2px 8px;
+    border: 1px solid rgb(250, 229, 229);
+    margin-left: 7px;
+    background: #313183;
+    border-radius: 3px;
+}
+li{
+    padding: 2px 6px;
+}
+.repo{
+    text-decoration: none;
+    color: white;
+    padding: 1px 5px;
+    background-color: rgb(39 39 178);
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 5px 4px;
+    display: inline-block;
+}
+@media screen and (max-width:1066px){
+      .box{
+        width: 90vh;
+        padding: 0px 15px;
+      }
+}
+@media screen and (max-width:661px){
+      .box{
+        width: 90vh;
+        padding: 0px 15px;
+      }
+}

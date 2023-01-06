@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise api in JS</title>
+</head>
+<body>
+    <h2>We are studying promise api in JS</h2>
+    <script>
+        //Promise.all api 
+        let p1=new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                resolve('Hey me ho pehla promise')
+            }, 1000);
+        })
+        let p2=new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                // resolve('Hey me ho dosra promise')
+                reject('Oai shappar me aik rejection hon')
+            }, 2000);
+        })
+        let p3=new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                resolve('Hey me ho tesra promise')
+            }, 3000);
+        })
+        // let prom=Promise.all([p1,p2,p3])
+        // prom.then((value)=>{
+        //     console.log(value)
+        // })
+        //Promise.setall is used if there is any rejection in any promise because the promise.all can't run if any rejection in any promise
+        // let prom2=Promise.allSettled([p1,p2,p3])
+        // prom2.then((value)=>{
+        //     console.log(value)
+        // })
+        //Promise.race is used to run any promise which is executed first and display it on the console
+        // let prom3=Promise.race([p1,p2,p3])
+        // prom3.then((value)=>{
+        //     console.log(value)
+        // })
+        let prom4=Promise.any([p1,p2,p3])
+        prom4.then((value)=>{
+            console.log(value)
+        })
+    </script>
+</body>
+</html>

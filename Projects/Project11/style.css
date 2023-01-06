@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,900&family=Nerko+One&family=Nunito:ital,wght@1,200&family=Oxygen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(50, 156, 244);
+    font-family: 'Nunito', sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+.input{
+    margin: 10px 3px;
+}
+#inp{
+    padding: 11px 9px;
+    border-radius: 13px;
+    border: none;
+}
+h1{
+    padding: 4px 13px;
+    color: white;
+}
+.mt{
+    display: inline-flex;
+}
+#img{
+    height: 50px;
+}

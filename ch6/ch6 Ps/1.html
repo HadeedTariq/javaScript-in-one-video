@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q#1 , 2 and 3</title>
+</head>
+
+<body>
+    <h3>Practice set Q#1 , 2 and 3</h3>
+    <script>
+        //Q#1 and Q#2
+        let run=true;
+        while(run){
+        let b = prompt('Enter Your age!');
+        b = Number.parseInt(b);
+        if (b >= 18) {
+            alert('You can drive');
+        }
+        else if(b<0){
+            console.error('You cannot enter age in negavtive');
+            break;
+        }
+        else if (b < 10 || b < 18) {
+            alert('You cannot  drive');
+        }
+        run=confirm('Do You want to play again');  
+    }
+    </script>
+</body>
+
+</html>

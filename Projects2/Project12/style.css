@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chivo+Mono:wght@300&family=Diplomata+SC&family=Kanit:wght@300&family=La+Belle+Aurore&family=Lato:ital,wght@0,700;0,900;1,900&family=Martian+Mono:wght@500&family=Nanum+Gothic:wght@800&family=Nerko+One&family=Nunito:ital,wght@1,200&family=Oxygen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: rgb(235 162 0);
+    font-size: 40px;
+    margin: 20px 0px;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 70vh;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+h4 {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 4px #b5b5b5;
+    font-weight: lighter;
+}
+
+.lg {
+    font-size: 25px;
+    border: 2px solid rgb(235 162 0);
+    margin-right: 7px;
+    padding: 2px;
+    color: rgb(235 162 0);
+    cursor: pointer;
+    text-align: center;
+}
+
+.lgaft {
+    visibility: hidden;
+}
+
+.lg:hover {
+    transform: rotate(90deg);
+    box-shadow: 0px 0px 8px 2px #ff4545;
+}
+
+.lg2 {
+    font-size: 25px;
+    border: 2px solid rgb(235 162 0);
+    /* margin-right: 7px; */
+    padding: 2px;
+    color: rgb(235 162 0);
+    cursor: pointer;
+    /* position: relative; */
+    text-align: center;
+    /* z-index: 29; */
+    right: 366px;
+    margin-top: 8px;
+    width: 30px;
+    position: absolute;
+    visibility: hidden;
+}
+.lgaft2{
+    visibility: visible;
+}
+
+.lg2:hover {
+    transform: rotate(90deg);
+    box-shadow: 0px 0px 8px 2px #ff4545;
+}
+.content2{
+    display: none;
+}
+
+.p1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 6px 0px;
+    font-size: 25px;
+    align-items: center;
+}
+
+.pg {
+    display: none;
+    font-size: 0;
+    border: none;
+}
+
+.cg {
+    visibility: hidden;
+    display: none;
+    font-size: 0;
+    border: none;
+}
+
+.p2 {
+    margin-top: 10px;
+    font-size: 20px;
+}

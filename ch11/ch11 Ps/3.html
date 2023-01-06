@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q#3 and 4</title>
+</head>
+<body>
+    <h3>Q#3 and 4</h3>
+    <script>
+        //Q#3 
+        class human{
+            age(b){
+                this.b=b
+                console.log(this.b)
+            }
+            gender(gen){
+                this.gen=gen
+                console.log(this.gen)
+            }
+        }
+        class student extends human{
+            rollno(rno){
+                this.rno=rno
+                console.log(this.rno)
+            }
+            subject(sub){
+                this.sub=sub
+                console.log(this.sub)
+            }
+        }
+        let b=new student
+        b.age(18)
+        b.gender('male')
+        b.rollno(12)
+        b.subject('Computer Science')
+        //Q#4
+        console.log(b instanceof human)
+    </script>
+</body>
+</html>

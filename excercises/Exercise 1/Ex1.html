@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise#1 of JavaScript Course</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(#57d5bd,#86b586) center center;
+            background-size:cover ;
+            height: 100vh;
+        }
+        .guess{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            background: linear-gradient(#d58787,#7abed3);
+            border: 2px solid black;
+            width: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="guess">
+    <h1>Write a JavaScript program to generate the random number and store it in a variable.The program then takes an input from the user to tell them whether the guess was correct greater or lesser than the orginal number <br>100-(number of guesses) is the score of the user The program is excepted to terminate once the number is guessed.Number should be between 1-100</h1>
+    </div>
+    <script>
+        var g=Math.floor(Math.random()*100)+1;
+        console.log(g);
+        let chances=0;
+        let d;
+        do{
+           d=prompt('Enter any number b/w 1 to 100');
+           d=Number.parseInt(d);
+           if(d<g){
+            alert('You enter lesser number');
+           }
+           else if(d>g){
+            alert('You enter greater number');
+           }
+           chances +=1;
+        }while(d!=g)
+        alert('You enter valid number');
+        console.log(chances);
+        // if(d==c){
+        //     alert('You enter the correct number');
+        // }
+        // else if(d>c || d<c){
+        //     alert('You are nearly to the number');
+        // }
+        // else{
+        //     alert('You enter invalid number');
+        // }
+    </script>
+</body>
+</html>

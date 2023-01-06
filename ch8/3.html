@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html insertion methods in JS</title>
+</head>
+<body>
+    I am the first bh (outer)
+    <div class="content">
+        I am the first (inner)
+       <div id="first">Hello Bhai logo kya hall ha</div>
+       I am the last (inner)
+    </div>
+    I am the first bw (outer)
+    <script>
+        let b=document.getElementsByTagName('div')[0];
+        let div=document.createElement('div')
+        div.innerHTML='<h3>Hello Great Peoples</h3>'
+        // b.appendChild(div);
+        // b.prepend(div)
+        // b.before(div);
+        // b.after(div);
+        // b.replaceWith(div);
+    </script>
+</body>
+</html>

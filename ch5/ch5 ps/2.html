@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q#2</title>
+</head>
+<body>
+    <h1>Keep adding number into array untill 0 is added</h1>
+    <script>
+        let arr=[12,15,14];
+        let b;
+        do{
+           b=prompt('Enter any number');
+           b=Number.parseInt(b);
+           arr.push(b);
+        } while(b!=0)
+        console.log(arr);
+        // if(b>0){
+        //     arr.push(b);
+        // }
+        // else{
+        //     alert('You enter invalid number');
+        // }
+        console.log(arr);
+    </script>
+</body>
+</html>

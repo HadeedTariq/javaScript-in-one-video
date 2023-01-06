@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 98vw;
+}
+.fs{
+    border:1px solid black ;
+    border-radius: 13px;
+    box-shadow: 0 0 3px rgb(175, 172, 172);
+    height: 74vh;
+    width: 60vw;
+    overflow: hidden;
+    position: relative;
+    transition: 0.9s;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    border-radius: 13px;
+    transition: 0.9s;
+}
+.btn{
+    margin: 2px 10px;
+    padding: 3px 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(218, 214, 214);
+    transition: 0.3s;
+}

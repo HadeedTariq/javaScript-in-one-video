@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom and bom in javaScript</title>
+    <style>
+        button{
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 13px;
+            padding: 3px 10px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dom and bom in javaScript</h1>
+    <button onclick="sp()">Google</button>
+    <script>
+        console.log(document);
+        console.log(window);
+        document.body.style.background='green';
+        function sp(){
+            location.href='https://google.com'
+        }
+    </script>
+</body>
+</html>

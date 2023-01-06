@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html attributes in javaScript</title>
+</head>
+<body>
+    <div id="ft" class="cdf" data-name="Hadeed" data-subject="CS">
+        hello me ho hadeed
+    </div>
+    <script>
+        let ft=document.getElementById('ft')
+        //get attribute in J.s
+        let a=ft.getAttribute('class')
+        console.log(a);
+        //get has attribute in js
+        //true case
+        console.log(ft.hasAttribute('class'))
+        //false case
+        console.log(ft.hasAttribute('style'))
+        //set attribute in J.S
+        // console.log(ft.setAttribute('hidden','true'))
+        // console.log(ft.setAttribute('class','hadeed'))
+        //remove attribute in J.S
+        console.log(ft.removeAttribute('class'))
+        //custom attribute in J.S
+        console.log(ft.dataset)
+        console.log(ft.dataset.name)
+        console.log(ft.dataset.subject)
+    </script>
+</body>
+</html>

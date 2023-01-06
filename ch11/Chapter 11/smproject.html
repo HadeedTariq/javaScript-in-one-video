@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+
+<body>
+    <h1>Small Project</h1><br>
+    <button onclick="sub()">Submit</button>
+    <button onclick="prev()">Preview</button>
+    <button onclick="cn()">Cancel</button>
+    <script>
+        class rForm {
+            constructor(n, tno, address) {
+                console.log(`Constructor called.... on name: ${n} and on tno: ${tno}`)
+                this.name = n;
+                this.tno = tno;
+                this.address = address
+            }
+            preview(){
+                alert(`${this.name} Your Train No is ${this.tno} address is ${this.address}`)
+            }
+            sumbit() {
+                alert(`${this.name} Your form is submitted at Train No ${this.tno} and on address ${this.address}`)
+            }
+            cancel() {
+                this.tno = 0
+                alert(`${this.name} Your form is cancelled at Train No ${this.tno} and on address ${this.address}`)
+            }
+        }
+        let hadeed = new rForm('Hadeed', 123421, 'atlantic ocean 420 Lahore,420786')
+        function sub(){
+        hadeed.sumbit()
+        hadeed.preview()
+        }
+        function prev(){
+        hadeed.preview()
+        }
+        function cn(){
+        hadeed.cancel()
+        hadeed.preview()
+        }
+     </script>
+</body>

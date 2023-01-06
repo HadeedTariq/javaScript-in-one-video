@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q#1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .ide {
+            display: flex;
+            background: black;
+            width: 100vw;
+            position: fixed;
+        }
+
+        .contenr {
+            position: sticky;
+        }
+
+        li {
+            font-size: 1.9vw;
+            color: wheat;
+            padding: 10px 13px;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        li:hover {
+            color: aqua;
+            text-decoration: underline;
+            text-decoration-color: rgb(228, 37, 69);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenr">
+        <ul class="ide">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Blog</li>
+            <li>Paid-Programs</li>
+        </ul>
+    </div>
+    <div class="fp">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+        <div class="row34">
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script>
+        let row = document.getElementsByClassName('row34')[0]
+        let url = "https://api.coindesk.com/v1/bpi/currentprice.json"
+        let response = fetch(url)
+        response.then((v) => {
+            return v.json()
+        }).then((v) => {
+            console.log(v)
+            ihtml = ""
+            for (item in v) {
+                console.log(v[item])
+                ihtml += `
+                <div class="card" style="width: 18rem; display:flex;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${v[item].code}</h5>
+                    <p>Starts at: ${v[item].symbol}</p>
+                    <p>Starts at: ${v[item].rate}</p>
+                    <p>Starts at: ${v[item].description}</p>
+                    <a href="#" class="btn btn-primary">Visit</a>
+                </div>
+            </div>
+                `
+            }
+            row.innerHTML = ihtml;
+        })
+    </script>
+</body>
+
+</html>

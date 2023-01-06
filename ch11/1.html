@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtoType in JS</title>
+</head>
+<body>
+    <div class="conten">
+        <h1>Oops ProtoType in JS</h1>
+    </div>
+    <script>
+        //Prototype in js help us to use the function or property of other object E.G:
+        let obj={
+            name:"Hadeed",
+            run:()=>{
+                console.log('I am in run')
+            }
+        }
+        let f={
+            name2:'Hashir'
+        }
+        //if i use f.run() then it will not work normally 
+        //f.run()
+        //but if i use proto i can use it
+        f.__proto__=obj  
+        f.run()
+        //I can also obj proto if the variable is not found in obj then it check the prto ofo obj E.G:
+        obj.__proto__={
+            name3:"Usman"
+        }
+        console.log(f.name3)
+    </script>
+</body>
+</html>

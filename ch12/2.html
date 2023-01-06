@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desturucturing in JS</title>
+</head>
+<body>
+    <h4>Desturucturing in JS</h4>
+    <script>
+        //By using desturucturing method we can assign values to different vaiable in a single line like this:
+        // let [b,c,d]=[1,2,3]
+        // console.log(b,c,d)//now the value of b=1,c=2 and d=3
+        //we can also use rest to get other values which are not assign to a variable like this:
+        // let arr=[23,45,67,89,34,23,41]
+        // let [d,e,f,...rest]=arr
+        // console.log(d,e,f,rest)
+        //Spread operator in JS
+        let arr1=[2,4,8]
+        //We can convert this array into object like this
+        let obj1={...arr1}
+        console.log(obj1)
+        //We can also use like this to create sum of numbers
+        function sum(b1,b2,b3){
+            return b1+b2+b3
+        }
+        console.log(sum(...arr1))
+        //Quick Quiz
+        //a:"the",b:"no"
+        const a="the"
+        const b="no"
+        const c={a,b}
+        console.log(c)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting in JS</title>
+</head>
+<body>
+    <h2>Hoisting Concept in JS</h2>
+    <script>
+        //if we use var ,let and const like this
+        // console.log(b)
+        // console.log(c)
+        // var b=9//this is undefined
+        // let c=10//this cannot be access before intialization
+        //and const is also print this
+        //but we can use and print simple function like this
+        // happy()
+        // function happy(){
+        //     console.log('Hello Hadeed')
+        // }
+        //this is th emain concept of the hoisting
+        // and the arrow function also give us error if we use them before their declaration like this:
+
+        
+        // f() //this will also throw error due to the use of let variable
+        let f=()=>{
+            console.log('Hello How are You')
+        }
+    </script>
+</body>
+</html>

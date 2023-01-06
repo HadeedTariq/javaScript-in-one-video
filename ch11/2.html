@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and Object in JS</title>
+</head>
+
+<body>
+    <h1>Oops Classes and Object in JS</h1>
+    <script>
+        class rForm {
+            sumbit() {
+                alert(`${this.name} Your form is submitted at Train No ${this.tno}`)
+            }
+            cancel() {
+                alert(`${this.name} Your form is cancelled at Train No ${this.tno}`)
+            }
+            fill(n,tno) {
+                this.name = n;
+                this.tno=tno
+            }
+        }
+        let hadeed = new rForm
+        let Hashir = new rForm
+        let Hashir2 = new rForm
+        Hashir.fill('Hashir',123420)
+        Hashir2.fill('Hashir',123422)
+        hadeed.fill('Hadeed',123421)
+        hadeed.sumbit()
+        Hashir.sumbit()
+        Hashir2.sumbit()
+        Hashir2.cancel()
+    </script>
+</body>
+
+</html>

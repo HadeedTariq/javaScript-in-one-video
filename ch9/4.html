@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.catch and .then in promises</title>
+</head>
+<body>
+    <h1>Promise another video</h1>
+    <script>
+        // let p=new Promise((resolve,reject)=>{
+        //     console.log('Promise is pending')
+        //     setTimeout(() => {
+        //         // console.log('Sorry not fullfilled');
+        //         // reject(new Error('Order rejected'));
+        //         console.log('Your order is fullfilled')
+        //         resolve('Fullfilled Successfully')
+        //     },3000);
+        // })
+        // console.log(p);
+        let p1=new Promise((resolve,reject)=>{
+            console.log('Promise is pending')
+            setTimeout(() => {
+                console.log('Your order is fullfilled')
+                resolve(true)
+            },3000);
+        })
+        let p2=new Promise((resolve,reject)=>{
+            console.log('Promise is pending')
+            setTimeout(() => {
+                console.log('Your order is not fullfilled')
+                reject(new Error('not find'))
+            },3000);
+        })
+        p1.then((value)=>{
+            console.log(value)
+        })
+        p2.catch((error)=>{
+            console.error(error)
+        })
+    </script>
+</body>
+</html>

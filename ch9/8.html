@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async and async await in JS</title>
+</head>
+<body>
+    <h1>async and async await in JS</h1>
+    <script>
+        //await function is always run in  the async function
+        async function hadeed(){
+            let LahoreWeather=new Promise((resolve,reject)=>{
+                setTimeout(() => {
+                    resolve('29 deg')
+                }, 3000);
+            })
+            let IslamabadWeather=new Promise((resolve,reject)=>{
+                setTimeout(() => {
+                    resolve('19 deg')
+                }, 5000);
+            })
+            let IW=await IslamabadWeather;
+            console.log('Islamabad weather is: '+IW)
+            let LW=await LahoreWeather
+            console.log('Lahore weather is: '+LW)
+            return [LW,IW]
+        }
+        // let b=hadeed();
+        // b.then((value)=>{
+        //     console.log(value)
+        // })
+       function cherry(){
+            console.log('I am a cherry good function and I am waiting to execute')
+        }
+        let m=async ()=>{
+            await hadeed()
+            await cherry()
+            // await hadeed()
+        }
+        m()
+    </script>
+</body>
+</html>

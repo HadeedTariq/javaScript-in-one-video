@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call back function in JS</title>
+</head>
+
+<body>
+    <div class="cont">
+        Call back function in JS
+    </div>
+    <script>
+        // //Synchronous function are those which are execute bit by bit or one-by-one like:
+        // console.log('Hey whatsupp')
+        // console.log('Hey How are you doing?')
+        // console.log('Hey What coming on')
+        // console.log('Hey Where are you going')
+
+        // //asynchronous method are those which use call back and after running in background they execute like:
+        // console.log('start')
+        // setTimeout(() => {
+        //     console.log('I am in setTimeout')
+        // }, 1000);
+        // console.log('end')
+
+        //Call back function in JS
+        function ls(src, callback) {
+         let script=document.createElement('script')
+         script.src=src
+         script.onload=function(){
+            console.log('Script is loaded on'+src)
+            callback(null,src)
+         }
+         script.onerror=function(){
+             console.log('Script got some error to load')
+             callback(new Error('src'))
+         }
+         document.body.append(script)
+        }
+        function kk(error,src){
+            if(error){
+                console.log('got some error')
+                return;
+            }
+                alert('Hey Script is run successfully '+src)
+        
+        }
+        ls('https://google.com',kk)
+
+    </script>
+</body>
+
+</html>

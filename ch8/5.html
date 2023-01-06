@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Name and Class list in JS</title>
+    <style>
+        .bg {
+            background-color: green;
+            width: 100vw;
+        }
+
+        .color {
+            color: white;
+        }
+
+        .bg2 {
+            background-color: aqua;
+        }
+
+        .color2 {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first" class="bg">
+        <span class="color" id="second">Hello Friends Whatsupp</span>
+    </div>
+    <script>
+        let c = document.getElementById('first')
+        let d = document.getElementById('second')
+        d.className = ('color2')
+        c.className = ('bg2');
+        c.classList.remove('bg2')
+    //Small Project Related to this
+    // let f=confirm('You want to log-in');
+    // if(f){
+    //     c.className=('bg2')
+    //     d.className=('color2')
+    // }else{
+    //     console.log('You cannot see real design of the website')
+    // }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finall Clause in JS</title>
+</head>
+<body>
+    <h3>Finall Clause in JS</h3>
+    <script>
+        function ss(){
+        try{
+            console.log('I am a good boy You like  me')
+            // console.log(program)
+            return;
+        }
+        catch(err){
+            console.log(err)
+        }
+        //Final clause run always if there is error or try can runthe final clause can still run if we return the try after execution
+        finally{
+            console.log('I run always')
+        }
+    }
+    ss()
+    </script>
+</body>
+</html>

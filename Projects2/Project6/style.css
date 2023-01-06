@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.968);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#heading {
+    margin-bottom: 100px;
+    text-decoration: solid underline aqua 4px;
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.817);
+    height: 25pc;
+    border-radius: 13px;
+    width: 50%;
+    box-shadow: 0px 0px 19px 4px rgb(171, 167, 167)
+}
+
+#user-img {
+    height: 140px;
+    border-radius: 100%;
+    width: 140px;
+    margin: 13px 0px;
+    box-shadow: 6px -3px 3px 2px rgb(8 196 248);
+}
+
+#name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#passion {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(69, 234, 234);
+}
+
+#details {
+    margin: 10px 15px;
+    font-size: 18px;
+}
+
+#btn {
+    padding: 8px 8px;
+    font-size: 16px;
+    background-color: rgb(176, 241, 219);
+    color: rgb(22, 193, 193);
+    border: none;
+    border-radius: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn2{
+    margin: 7px 0px;
+    font-size: 30px;
+    padding: 2px 10px;
+    border: none;
+    color: aqua;
+    cursor: pointer;
+}

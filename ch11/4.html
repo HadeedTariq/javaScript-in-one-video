@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Inheritance in Js</title>
+</head>
+<body>
+    <h2>Class Inheritance in Js</h2>
+    <script>
+        class animal{
+            constructor(name,color){
+                this.name=name
+                this.color=color
+            }
+            run(){
+                alert(`${this.name} is Running fast`)
+            }
+            roar(){
+                alert(`${this.name} is Barking! so hard`)
+            }
+        }
+        //We use class inheritance so that if we want major changes in over all objects so we can do it easly because if we don't use it then we need to change it in all the objects which is sometime too difficult in big code bases:
+        class monkey extends animal{
+            eatapple(){
+                console.log(`${this.name} is eating apple`)
+            }
+        } 
+        let lion=new animal('Lion','Brown')
+        let m=new monkey('Chintu','White')
+        m.run()
+        m.roar()
+        // lion.eatapple()//we don't use it 
+        // lion.run()
+        // lion.roar()
+    </script>
+</body>
+</html>

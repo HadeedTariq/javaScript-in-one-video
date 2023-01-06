@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage in JS</title>
+</head>
+<body>
+    <h3>Local Storage and it's keys in JavaScript</h3>
+    <script>
+        let key=prompt('Enter Your Key')
+        let value=prompt('Enter Your value')
+        localStorage.setItem(key,value)
+        console.log(`The value of ${key} is ${localStorage.getItem(key)}`)
+        //localstorage.removeItem
+        if(key =='red' || key=='brown'){
+            localStorage.removeItem(key)
+        }
+        //LocalStorage.clear
+        else if(key == 0){
+            localStorage.clear()
+        }
+        //localstorage.length
+       console.log(localStorage.length)
+    </script>
+</body>
+</html>

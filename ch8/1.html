@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other properties in JavaScript</title>
+</head>
+<body>
+    <span id="spt" hidden>Hey dear please give me shootout</span>
+    <script>
+        let b=document.getElementById('spt')
+        //this show simple as the html
+        console.log(b)
+        //This show as an object
+        console.dir(b)
+        //tag name
+        let c=b.tagName;
+        console.log(c)
+        //node name
+        let d=b.nodeName;
+        console.log(d)
+        //innerHtml in JavaScript
+        // b.innerHTML='<h1>Hey I am a good boy</h1>'
+        // //outerHtml in JavaScript
+        // //outer html provide us whole html vnd we can also change innerHtml by using it like
+        // b.outerHTML='<h3>Hello friends chai peloo</h3>'
+        //text property is used to see only text of the website
+        console.log(b.textContent);
+        //hidden property is used to see hidden content of the website
+        b.hidden=false;
+    </script>
+</body>
+</html>

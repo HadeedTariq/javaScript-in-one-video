@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    max-width: 80%;
+    background-color: aqua;
+    margin: 3px 30px;
+}
+nav{
+    display: flex;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar li{
+    list-style: none;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert adjacent in html</title>
+</head>
+<body>
+    <div id="first">Hello Great boys I think You are the best</div>
+    <script>
+        let first=document.getElementById('first')
+        //This is used to add this before the end of the div
+        first.insertAdjacentHTML('beforeend','<h1>beforeend 4</h1>')//4
+        //This is used to add this in last  after the div start 
+        first.insertAdjacentHTML('beforebegin','<h1>beforebegin1</h1>')//1
+        //This is used to add this after the the div end
+        first.insertAdjacentHTML('afterend','<h1>afterend5</h1>')//5
+        //This is used to add this after the beginning of the div
+        first.insertAdjacentHTML('afterbegin','<h1>afterbegin2</h1>')//2
+    </script>
+</body>
+</html>

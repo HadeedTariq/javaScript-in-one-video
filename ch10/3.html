@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=D, initial-scale=1.0">
+    <title>Cookies in JS</title>
+</head>
+<body>
+    <h2>Cookies in JavaScript</h2>
+    <script>
+        //cookies are used to store user data for future so that if the user visit this site again the website store his account information and show him if he want to log-in again with it
+        // console.log(document.cookie)
+        //cookie store the data and don't overwrite on the data and store every data added in it
+        //  document.cookie="name=Hadeed"
+        //  document.cookie="name1=Sameed"
+        //  document.cookie="name2=Hashir"
+        //  document.cookie="name3=Usman"
+        // console.log(document.cookie)
+        let f=prompt('Enter Your value')
+        let d=prompt('Enter Your key')
+        //but in this case if we add special character the syntax error occur so we use encoded an decoded Uri
+        document.cookie=`${encodeURI(f)}=${encodeURI(d)}`
+        console.log(document.cookie)
+    </script>
+</body>
+</html>

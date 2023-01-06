@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor OverRiding in Js</title>
+</head>
+
+<body>
+    <h1>Constructor OverRiding in JS</h1>
+    <script>
+        class Colleague {
+            constructor(name){
+                this.name=name;
+            }
+            login() {
+                console.log(`You are loged-in`)
+            }
+            logout() {
+                console.log('You are log-out')
+            }
+            requeseLeaves(leaves) {
+                console.log(`${this.name} Your ${leaves} leaves are approved`)
+            }
+        }
+        //we use super. method so if we change in the parent object then change is also happen in childern object
+        class Developer extends Colleague {
+            //WE use extra constructor by using super method in constructor 
+            // constructor(name){
+            //     super()
+            //     this.name=name;
+            // }
+            requeseLeaves(leaves) {
+                //Use this to provide extra facility but use the parent object
+                super.requeseLeaves(leaves + 1)
+                console.log(`One extra is also granted`)
+            }
+        }
+        let e = new Developer('Hadeed')
+        e.requeseLeaves(3)
+        let f = new Colleague('Hanu')
+        f.requeseLeaves(3)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+body{
+    background-color: rgb(32, 137, 241);
+}
+.image-box{
+    background-color: white;
+     width: 140px;
+     height: 140px;
+     margin: 10px 12px;
+}
+img{
+    width: 108px;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    border-radius: 300px;
+}
+.border{
+    border: 2px solid red;
+    padding: 10px;
+    margin-top: 5px;
+}
+.hide{
+    display: none;
+}
+.dashed{
+    background-color: aqua;
+    border-style: dashed;
+}

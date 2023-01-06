@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 2 Solution</title>
+</head>
+<body>
+    <h2>Snake water or gun game using javaScript</h2>
+    <script>
+        alert('Welcome to the snake,water and gun game');
+        alert('s for snake & w for water & g for gun');
+        let b=prompt('Enter s,w or g');
+        let c=Math.floor(Math.random()*3+1);
+        //1 is snake & 2 is water & 3 is gun
+        console.log(c);
+        if (b=='s' && c== 1) {
+            alert('The game is declare')
+        }
+        else if(b=='w' && c==2){
+            alert('The game is declare')
+        }
+        else if(b=='g' && c==3){
+            alert('The game is declare')
+        }
+        else if(b=='s' && c==2){
+            alert('You win')
+        }
+        else if(b=='w' && c==3){
+            alert('You win')
+        }
+        else if(b=='g' && c==1){
+            alert('You win')
+        }
+        else{
+            alert('You lose');
+        }
+    </script>
+</body>
+</html>

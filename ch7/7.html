@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches Closest and Contains in javaScript</title>
+</head>
+<body>
+    <div class="cocks" id="id1">This is id1 <span id="sp1">This is my personal span</span></div>
+    <div class="cocks" id="id2">This is id 2</div>
+    <script>
+        //Matches Closest and Contains in JavaScript
+        let id1=document.getElementById('id1');
+        console.log(id1)
+        // false case in matches
+        console.log(id1.matches('.box'))
+        //true case in matches
+        console.log(id1.matches('.cocks'))
+        //Closest in JavaScript
+        let sp1=document.getElementById('sp1')
+        console.log(sp1.closest('#sp1'))
+        //Contains in JavaScript
+        //true cases
+        console.log(id1.contains(sp1))
+        console.log(sp1.contains(sp1))
+        //False Cases
+        console.log(sp1.contains(id1))
+    </script>
+</body>
+</html>

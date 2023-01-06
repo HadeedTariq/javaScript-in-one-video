@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attaching multiple handlers to promise</title>
+</head>
+<body>
+    <h4>Multiple handlers in promise</h4>
+    <script>
+        //Multiple handlers are different from .then chaining because they execute ordint to .then promise
+        let promise=new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                resolve('Hey kyahal ha')
+            }, 3000);
+        })
+        promise.then((value)=>{
+            console.log(value)
+        })
+        promise.then((value)=>{
+            console.log('Hurray our code is executed successfully')
+        })
+    </script>
+</body>
+</html>

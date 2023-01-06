@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIFE</title>
+</head>
+<body>
+    <h3>advanced javascript topic IIFE</h3>
+    <script>
+        let b=()=>{
+            return new Promise((resolve,rejcet)=>{
+                setTimeout(() => {
+                    resolve(56)
+                }, 2000);
+            })
+        }
+        //by iife instead of making new variable we can use a function without calling it like this:
+        (async()=>{
+            let d=await b()
+            console.log(d)
+            let e=await b()
+            console.log(e)
+            let f=await b()
+            console.log(f)
+        })()
+    </script>
+</body>
+</html>

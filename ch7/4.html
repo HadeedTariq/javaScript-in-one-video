@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .on {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        li {
+            color: white;
+            margin: 13px;
+            cursor: pointer;
+            text-decoration: none;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="on">
+        <li class="sbt">Home</li>
+        <li class="sbt">Contact-Me</li>
+        <li class="sbt">Hire-Me</li>
+        <li class="sbt">Blog</li>
+    </ul>
+    <script>
+        //Element only navigation in javaScript
+        const ch = () => {
+            document.body.firstElementChild.style.background = 'grey';
+        }
+        let b = document.body;
+        console.log(b.firstChild)
+        console.log(b.firstElementChild)       
+    </script>
+</body>
+
+</html>

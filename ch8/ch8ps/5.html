@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q#5</title>
+    <style>
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sp1{
+            border: 2px  solid black;
+            border-radius: 100px;
+            height: 200px;
+            width: 200px;
+        }
+        .sp{
+            background: linear-gradient(#f0f015,#73b6e6,#008062,#ad79d3);
+        }
+    </style>
+</head>
+<body>
+    <div class="content" id="bud">
+          <div id="sp1" class="sp"></div>
+    </div>
+    <script>
+        let d=setInterval(() => {
+            let c=document.getElementById('sp1');
+            c.classList.toggle('sp')
+        },600);
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+.qr{
+    display: block;
+    color: green;
+    padding:13px 10px;
+    font-size: 5vw;
+}
+.pt{
+    display: none;
+}

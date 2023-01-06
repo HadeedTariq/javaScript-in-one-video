@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static method in Js</title>
+</head>
+<body>
+    <h3>Static method in JS</h3>
+    <script>
+        class janwar{
+            constructor(name){
+                this.name=name
+            }
+            run(){
+                alert(`${janwar.capitalize(this.name)} is running`)
+            }
+            //static methods are used to use objects outside and inside
+           static capitalize(name){
+                return name.charAt(0).toUpperCase()+name.substr(1,name.length)
+            }
+        }
+        let b=new janwar('monkey')
+        b.run()
+    </script>
+</body>
+</html>
